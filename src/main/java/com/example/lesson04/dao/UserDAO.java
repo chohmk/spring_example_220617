@@ -12,6 +12,6 @@ public interface UserDAO {
 			@Param("yyyymmdd") String yyyymmdd, 
 			@Param("email") String email, 
 			@Param("introduce") String introduce);
-	
+
 	public User selectLastUser();
 }

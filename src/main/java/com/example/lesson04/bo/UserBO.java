@@ -11,11 +11,11 @@ public class UserBO {
 
 	@Autowired
 	private UserDAO userDAO;
-	
+
 	public void addUser(String name, String yyyymmdd, String email, String introduce) {
 		userDAO.insertUser(name, yyyymmdd, email, introduce);
 	}
-	
+
 	public User getLastUser() {
 		return userDAO.selectLastUser();
 	}
