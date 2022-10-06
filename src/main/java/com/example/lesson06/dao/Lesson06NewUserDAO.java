@@ -11,4 +11,6 @@ public interface Lesson06NewUserDAO {
 			@Param("yyyymmdd") String yyyymmdd,
 			@Param("introduce") String introduce,
 			@Param("email") String email);
+	
+	
 }

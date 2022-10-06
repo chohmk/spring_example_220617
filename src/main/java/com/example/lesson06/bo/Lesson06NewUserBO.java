@@ -13,4 +13,6 @@ public class Lesson06NewUserBO {
 	public void addNewUser(String name, String yyyymmdd, String introduce, String email) {
 		newUserDAO.insertNewUser(name, yyyymmdd, introduce, email);
 	}
+	
+	
 }

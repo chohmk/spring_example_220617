@@ -1,7 +1,11 @@
 package com.example.lesson06;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.lesson06.bo.Lesson06NewUserBO;
 
-@RequestMapping("/lesson06/ex01")
+@RequestMapping("/lesson06")
 @Controller
 public class Lesson06Controller {
 	
@@ -18,7 +22,7 @@ public class Lesson06Controller {
 	
 	// 유저 추가 화면
 	// 요청 URL: http://localhost/lesson06/ex01/add_user_view
-	@RequestMapping("/add_user_view")
+	@RequestMapping("/ex01/add_user_view")
 	public String ex01() {
 		return "lesson06/addNewUser";
 	}
@@ -43,4 +47,7 @@ public class Lesson06Controller {
 	public String getUser() {
 		return "lesson06/getNewUser";
 	}
+	
+	
+	
 }
